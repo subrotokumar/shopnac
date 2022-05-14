@@ -1,6 +1,8 @@
-import '../model/product.dart';
+import 'package:flutter/cupertino.dart';
 
-class ProductData {
+import '../provider/product.dart';
+
+class ProductData with ChangeNotifier {
   List<Product> loadedProduct = [
     Product(
       id: 'p1',
